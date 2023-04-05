@@ -91,7 +91,7 @@ const updateTodo = (targetTodo) => {
 /** @param {number} id */
 const deleteTodo = (id) => {
   const delete_judgeId = todos.find((todo) => todo.id === id);
-  // judgeId에는 undefined가 할당, 어차피 값이 없는 것이니 filter로도 가능git
+  // judgeId에는 undefined가 할당, 어차피 값이 없는 것이니 filter로도 가능
   if (!delete_judgeId) {
     return console.log(`id = ${id}에 맞는 todo를 찾을 수 없습니다. `);
   }
